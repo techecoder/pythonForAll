@@ -1,0 +1,36 @@
+# List Operations
+mixed_list = [1, 2.5, True, "Hello", 5]          # List can contain any values
+print(mixed_list, type(mixed_list))              # Print List and type of list
+print(mixed_list[0], mixed_list[-1])             # Print first/last index of list
+mixed_list[4] = 9                                # update list last index
+mixed_list.append("newappend")                   # Append List
+mixed_list.extend(["newextend1", "newextend2"])  # Add multiple values in List
+mixed_list2 = [99, 98]                           # new list
+mixed_list += [99, 98]                           # concat list
+mixed_list.insert(3, "newinsert")                # Insert at particular index in List
+print(mixed_list)
+mixed_list.remove('Hello')                       # Remove values from list
+print(mixed_list)
+newlist = ['Maruti', 'Ford', 'Kia', 'Mahindra']  # new list declaration
+newlist.sort()                                   # Sorting the same list
+print(newlist)
+newlist.reverse()                                  # reverse the list
+print(newlist)
+newlist.pop()                                     # Remove last index of the list
+print(newlist.count('Maruti'))                    # Counting no of occurrence of Maruti in List
+newlist.clear()                                    # clear whole list
+newlist = mixed_list.copy()                        # Deep copy of the list, refer different list
+print(newlist)
+shallowlist = mixed_list                            # Shallow copy of list refer to same list
+print(newlist, "", shallowlist)
+
+
+##### Additional built in functions for list
+list_num = [10, 20, 30, 40, 50, 60]
+print(max(list_num), )
+sortedlist = sorted(list_num)                   #Create new sorted list
+list_num *= 2                                   # Multiply list
+print(list_num)
+print(list_num[2:5:2])                            # slicing List with step number
+print(list_num[5:2:-2])                            # slicing List with step number
+print(any(list_num))                             # Print Boolean
