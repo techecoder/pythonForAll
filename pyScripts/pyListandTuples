@@ -58,3 +58,19 @@ print(tuple_x, tuple_y)
 num_list, str_list, num_tuple = [1, 2, 3], ['one', 'two', 'three'], ('ONE', 'TWO', 'THREE')
 result = zip(str_list, num_tuple)
 print(dict(result))  # Creating key value pair in dictionary
+# Complex Data Type using Dict and Sets
+fruit_qty_consumed1 = {'Banana': [50, 60, 33, 45], 'Orange': [70, 20, 70, 50],
+                       'Avocado': [60, 40, 30, 20]}  # Intialise empty dictionary
+print(fruit_qty_consumed1, fruit_qty_consumed1['Banana'][0])  # Print nested values based on key
+fruit_qty_consumed = {'Banana': {'fri': 50, 'sat': 60, 'sun': 33}, 'Orange': {'fri': 40, 'sat': 20, 'sun': 40},
+                      'Avocado': {'fri': 10, 'sat': 90, 'sun': 80}}  # define nested dictionary
+print(fruit_qty_consumed, fruit_qty_consumed['Banana']['fri'])  # Print nested value based of multiple keys
+print(fruit_qty_consumed1.items())  # print dict in tuple format
+fruit_qty_consumed1.pop('Banana')  # Remove Key value pair from dict
+print(fruit_qty_consumed1, fruit_qty_consumed1.pop('Orange'))  # pop function will return value for specific key
+# Updating Dict from another dict
+dict_age, new_dict_age = {'Ethan': 55, 'Sofia': 45}, {'Ethan': 65, 'Sofia': 45}
+print(dict_age, new_dict_age)
+dict_age.update(new_dict_age)  # Updated Ethan age in dict_age from new_dict_age
+new_dict_age.clear()  # Clear dict key values and make it empty
+print(dict_age, new_dict_age)
