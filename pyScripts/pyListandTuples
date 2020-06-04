@@ -25,7 +25,7 @@ shallowlist = mixed_list                            # Shallow copy of list refer
 print(newlist, "", shallowlist)
 
 
-##### Additional built in functions for list
+#### Additional built in functions for list
 list_num = [10, 20, 30, 40, 50, 60]
 print(max(list_num), )
 sortedlist = sorted(list_num)                   #Create new sorted list
