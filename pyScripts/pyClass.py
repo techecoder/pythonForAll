@@ -108,3 +108,4 @@ c1.height()  # calling Base method
 c1.intelligence()  # calling Base method
 c1.experience()  # calling derived method
 
+# python inbuilt special functions: repr,
