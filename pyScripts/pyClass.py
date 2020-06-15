@@ -107,4 +107,3 @@ c1 = child1()
 c1.height()  # calling Base method
 c1.intelligence()  # calling Base method
 c1.experience()  # calling derived method
-
